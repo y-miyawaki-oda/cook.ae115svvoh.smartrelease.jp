@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+/* sec_ttl
+--------------------------------*/
+.sec_ttl_bg::after{
+	background-image: url(../img/about/howto/ttl_bg.jpg);
+}
+
+/* sec_intro
+--------------------------------*/
+.howto_btn {
+    margin-top: 40px;
+}
+.howto_btn li{
+	line-height: 100%;
+}
+.howto_btn li:nth-child(n+4) {
+    margin-top: 15px;
+}
+.howto_btn li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #EA7D73;
+    position: relative;
+    height: 65px;
+    text-align: center;
+}
+.howto_btn li a::after {
+    content: '';
+    width: 7px;
+    height: 14px;
+    background: url(../img/common/icon_anchor.svg) no-repeat center /contain;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px){
+	.grid3 {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.grid3 > * {
+		width: 32%;
+		margin-right: 2%;
+	}
+	.grid3 > *:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.howto_btn li{
+		margin-top: 2.5%;
+	}
+	.howto_btn li:nth-child(n+4) {
+		margin-top: 2.5%;
+	}
+	.howto_btn li a {
+		font-size: 3.6vw;
+		height: 12.4vw;
+		line-height: 1.2;
+	}
+	.howto_btn li a::after {
+		width: 1.5vw;
+		height: 3.2vw;
+		right: 4%;
+	}
+}
+
+/* sec_howto
+--------------------------------*/
+.sec_howto .graph{
+	border: solid 5px #EA7D73;
+}
+
+.sec_howto .graph .ttl {
+    font-size: 2.2rem;
+	font-weight: 700;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #EA7D73;
+}
+@media screen and (max-width: 768px){
+	.sec_howto .graph{
+		border: none;
+	}
+	.sec_howto .graph .ttl {
+		background-color: none;
+	}
+}
+.sec_howto .graph .img{
+	padding: 20px 0;
+	text-align: center;
+}
+.sec_howto .graph+p{
+	margin-top: 15px;
+}
+.sec_howto .graph+p+p{
+	font-size: 2.2rem;
+	font-weight: 700;
+	background: #F7F7F7;
+	text-align: center;
+	margin-top: 40px;
+	padding: 20px 0;
+    line-height: 1.6;
+}
+.sec_howto .top3{
+	font-size: 2.8rem;
+	line-height: 1.5;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.sec_howto .cheer .img{
+	text-align: center;
+}
+.sec_howto .jobmap .img{
+	text-align: center;
+}
+.sec_howto .cheer .txt,
+.sec_howto .jobmap .txt{
+	margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+	.sec_howto .graph .ttl {
+		font-size: 5.9vw;
+		padding: 1.4% 0;
+	}
+	.sec_howto .graph .img {
+		padding: 5%;
+	}
+	.sec_howto .graph+p {
+		font-size: 2.4vw;
+		margin-top: 8.3%;
+		padding: 7% 0;
+	}
+	.sec_howto .graph+p+p {
+		padding-top: 0;
+		padding-bottom: 40px;
+	}
+	.sec_howto .cheer .img:nth-of-type(1) {
+		margin-bottom: 8%;
+	}
+	.sec_howto .top3{
+		font-size: 4.7vw;
+		margin-top: 6%;
+		margin-bottom: 3%;
+	}
+	.sec_howto .cheer .txt,
+	.sec_howto .jobmap .txt{
+		margin-top: 4%;
+	}
+}
+
+/* sec_course
+--------------------------------*/
+.sec_course .ttl_line{
+	font-size: 2.8rem;
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+	padding: 0 1em;
+}
+.sec_course .ttl_line::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #EA7D73;
+}
+.sec_course .ttl_line.design::before{
+	background: #FF053A;
+}
+.sec_course .ttl_line.technical::before{
+	background: #E94C2B;
+}
+.sec_course .ttl_line.stylist::before{
+	background: #2A6FE6;
+}
+.sec_course .ttl_line.business::before{
+	background: #00BDE6;
+}
+.sec_course .ttl_line span{
+	display: inline-block;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+	padding: 0 0.5em;
+}
+.sec_course .list .img{
+	margin-top: 25px;
+}
+.sec_course .list .txt{
+	line-height: 1.5;
+	text-align: center;
+	margin-top: 20px;
+}
+.sec_course .list .btn{
+	margin-top: 20px;
+}
+.sec_course .list .btn_type1{
+	height: 60px;
+}
+@media screen and (max-width: 767px) {
+	.sec_course:not(:last-child){
+		padding-bottom: 11%;
+	}
+	.sec_course .ttl_line{
+		font-size: 4.8vw;
+		padding: 0 1em;
+	}
+	.sec_course .ttl_line::before{
+		height: 1px;
+	}
+	.sec_course .ttl_line span{
+		display: inline-block;
+		background: #fff;
+		position: relative;
+		z-index: 1;
+		padding: 0 0.5em;
+	}
+	.sec_course .list .img{
+		margin-top: 5%;
+	}
+	.sec_course .list .txt{
+		margin-top: 4%;
+	}
+	.sec_course .list .btn{
+		margin-top: 4%;
+	}
+	.sec_course .list .btn_type1{
+		height: 12vw;
+	}
+}
+
+/* sec_flow
+--------------------------------*/
+.sec_flow .list li::after{
+	content: "";
+	background: url(../img/about/howto/arrow.svg) no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: block;
+	height: 44px;
+	margin: 20px 0;
+}
+.sec_flow .list li:last-child::after{
+	content: none;
+}
+.sec_flow .list li dl{
+	border: 1px solid #E5E5E5;
+	/*padding-bottom: 40px;*/
+}
+.sec_flow .list li:last-child dl{
+	border: none;
+}
+.sec_flow .list li dt{
+	font-size: 2rem;
+	font-weight: 700;
+	background: #F4BEB8;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.sec_flow .list li dd{
+	padding: 30px 30px 26px;
+}
+.sec_flow .list li dd p{
+	padding: 0 25px;
+}
+.sec_flow .list .bdwrap{
+	border: none;
+}
+.sec_flow .list .bdwrap div{
+	border: 5px solid #EA7D73;
+	padding: 39px;
+}
+.sec_flow .list .bdwrap p{
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10px;
+}
+.sec_flow .list li .large{
+	font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 1;
+}
+.sec_flow .list li dd .txt{
+	margin-top: 12px;
+}
+
+.sec_flow .list li dd .hr{
+	border-bottom: 1px dotted rgba(162,162,162,0.4);
+	padding-bottom: 44px;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+	.sec_flow .list li::after {
+		height: 8.7vw;
+		margin: 6% 0;
+	}
+	.sec_flow .list li dt {
+		font-size: 3.1vw;
+		padding: 2.6% 0;
+	}
+	.sec_flow .list li dd p {
+		padding: 0;
+		font-size: 3.7vw;
+	}
+	.sec_flow .list li dd .txt {
+		font-size: 3.2vw;
+		text-align: left;
+		margin-top: 4.8%;
+	}
+	.sec_flow .list li dd{
+		padding: 7% 6.5% 52px;
+	}
+	.sec_flow .list .bdwrap div{
+		border: 5px solid #EA7D73;
+		padding: 7%;
+	}
+	.sec_flow .list .bdwrap p {
+		font-size: 3.2vw;
+		margin-top: 5%;
+	}
+	.sec_flow .list li .large {
+		font-size: 7.8vw;
+		line-height: 1.3;
+		margin: 0;
+	}
+}
+
+
+/* sec_other
+--------------------------------*/
+.sec_other .other_link {
+	max-width: 560px;
+	margin: 0 auto 40px;
+}
+.sec_other .list li {
+    max-width: 250px;
+}
+.sec_other .list li a {
+    display: block;
+}
+.sec_other .list .img {
+    position: relative;
+    width: 96%;
+}
+.sec_other .list .img::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #EA7D73;
+}
+.sec_other .list .img img {
+    position: relative;
+    z-index: 1;
+}
+.sec_other .list p {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+	.sec_other .other_link {
+		max-width: inherit;
+		margin-bottom: 5%;
+	}
+	.sec_other .list li {
+		max-width: inherit;
+	}
+	.sec_other .list p {
+		font-size: 3.2vw;
+    	line-height: 1.5;
+		margin-top: 8%;
+	}
+
+}
+
+.sec_howto .jobmap .txt.active-field{
+	position: relative;
+	padding: 20px 0;
+}
+.sec_howto .jobmap .txt.active-field::before {
+	position: absolute;
+    background-image: url(../img/about/howto/border.png);
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec_howto .jobmap .txt.active-field::after {
+	position: absolute;
+    background-image: url(../img/about/howto/border.png);
+    content: '';
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    /*transition: all .6s ease;
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) top left no-repeat,
+        linear-gradient(90deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) top center repeat-x,
+        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) top right no-repeat,
+        
+        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) top left no-repeat,
+        linear-gradient(0deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) center left repeat-y,
+        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) bottom left no-repeat,
+        
+        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) bottom left no-repeat,
+        linear-gradient(90deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) bottom center repeat-x,
+        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) bottom right no-repeat,
+        
+        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) top right no-repeat,
+        linear-gradient(0deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) center right repeat-y,
+        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) bottom right no-repeat;
+    background-size: var(--dash-size) var(--border-weight), calc(var(--dash-size) + var(--gap-size)) var(--border-weight), var(--dash-size) var(--border-weight), var(--border-weight) var(--dash-size), var(--border-weight) calc(var(--dash-size) + var(--gap-size)), var(--border-weight) var(--dash-size);*/
+}
+
+
+.sec_howto .icon_list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.sec_howto .icon_list .icon{
+	width: 20%;
+	text-align: center;
+	position: relative;
+}
+
+.sec_howto .icon_list .icon::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	width: 1px;
+	background-color: #707070;
+	height: 80%;
+}
+.sec_howto .icon_list .icon::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 1px;
+	background-color: #707070;
+	width: 80%;
+}
+.sec_howto .icon_list .icon img{
+	margin: 30px 10px 10px 10px;
+}
+.sec_howto .icon_list .icon p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+@media screen and (min-width: 768px){
+	.sec_howto .icon_list .icon.pc-b::before, .sec_howto .icon_list .icon.pc-l::after{
+		content: '';
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	.sec_howto .icon_list .icon{
+		width: 25%;
+	}
+	.sec_howto .icon_list .icon.sp-b::before, .sec_howto .icon_list .icon.sp-r::after{
+		content: '';
+		display: none;
+	}
+	.sec_howto .icon_list .icon img{
+		margin: 10px 10px 10px 10px;
+		width: 75%;
+	}
+	.sec_howto .icon_list .icon p{
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 2.2vw!important;
+	}
+	.sec_howto .icon_list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: inherit;
+	}
+
+}
+#oshigoto-map{
+	padding-bottom: 10px;
+}
